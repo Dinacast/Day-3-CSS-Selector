@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Static Template</title>
+    <style>
+                 *{
+                   color: gray
+                 }
+              ::selection{
+                background-color: aqua;
+              }
+             #block{
+                width: 90%
+                 margin: 0 auto;}
+             .heading{
+                 color: blue
+             }
+             #block,.heading{
+               background-color: lightgray
+             }
+            p{
+             font-size: 18px;
+             }
+             p,span{
+            font-size: 19px;
+             }
+             div p{
+               color: black
+             }
+             #block span{
+               text-align: center;
+               display: block;
+             }
+             div > p{
+               text-align: right;
+             }
+             div > span{
+               color: red;
+             }
+             h1 + span + span + span + span{
+      color: purple
+             }
+             h1 ~ span{
+               font-size: 50px;
+             }
+             h1::before{
+               content: "Halo Guys";
+               background-color: blue;
+               color: white;
+               padding: 5px;
+               font-size: 15px;
+             }
+             h1::after{
+               content: "Terima Kasih";
+               background-color: blue;
+               color: white;
+               padding: 5px;
+               font-size: 12px;
+             }
+             p::first-letter{
+               color: blue;
+               font-size: 30px;
+             }
+             p::first-line{
+              background-color:lightpink;
+             }
+             a{
+               color: blue;
+             }
+             a:hover{
+               color: orange;
+             }
+             a:active{
+               color: green;
+             }
+             a:visited{
+               color:purple;
+             }
+      ul li:first-child{
+        color: red;
+      }
+      ul li:last-child{
+        color: green;
+      }
+      ul li:nth-child(3){
+        color:blue;
+      }
+      ul li:nth-child(odd) {
+        background-color: gray;
+      }
+      ul li:nth-child(even) {
+        background-color: lightblue;
+      }
+      ul li:nth-child(2n+1){
+        background-color: pink;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="block">
+      <h1 class="heading">
+        This is a static template, there is no bundler or bundling involved!
+      </h1>
+      <span>Lorem Ipsum</span>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aliquam
+        faucibus risus ac tellus lacinia, ut vulputate turpis molestie. Ut sit
+        amet augue molestie, consequat nibh id, accumsan lorem. Fusce sodales
+        orci neque, quis iaculis ante porta quis. Integer sollicitudin est vitae
+        nunc egestas scelerisque. Maecenas dolor libero, luctus eget
+        sollicitudin ut, rutrum varius diam. Etiam quis massa a elit suscipit
+        ullamcorper. Etiam id orci vel magna aliquam aliquam ullamcorper semper
+        eros. Nulla ornare turpis eget tristique tempus. Aenean eu nisl a odio
+        ornare egestas vitae sed metus. Pellentesque laoreet dictum vehicula.
+        Cras efficitur sollicitudin congue. Nulla vitae nunc non mauris suscipit
+        tempor. Donec lectus leo, cursus in nulla vitae, venenatis sodales
+        lectus. Phasellus vitae hendrerit velit.
+        <span>Lorem Ipsum</span><span>Lorem Ipsum</span>
+        <a href="#">Link 1</a>
+        <a href="#">Link 2</a>
+        <a href="google.com">Link 3</a>
+      </p>
+      <p>
+        Quisque dolor turpis, tempor eu ante a, posuere mollis dui. Fusce
+        elementum tincidunt sollicitudin. Cras eu sodales ex. Ut in ultrices mi.
+        Sed sit amet turpis consequat, vulputate risus venenatis, dignissim
+        lorem. Vivamus eu purus felis. Vestibulum odio neque, sodales maximus
+        turpis vel, vehicula sodales est. Vivamus ornare molestie diam, ut
+        volutpat tellus imperdiet eu.
+        <span>Lorem Ipsum</span>
+      </p>
+      <ul>
+        <li>Satu</li>
+        <li>Dua</li>
+        <li>Tiga</li>
+        <li>Empat</li>
+        <li>Lima</li>
+      </ul>
+    </div>
+  </body>
+</html>
